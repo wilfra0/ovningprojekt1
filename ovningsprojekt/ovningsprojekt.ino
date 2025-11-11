@@ -86,7 +86,7 @@ void oledWrite(String text) {
 *Returns: void
 */
 void servoWrite(float value) {
-  int servoAngle = map(value, 20, 30, 0, 180); 
+  int servoAngle = map(value*100, 1500, 3000, 0, 179); 
   myservo.write(servoAngle);
 }
 
